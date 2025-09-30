@@ -1,7 +1,6 @@
 // src/components/shared/HeroClient.tsx
 'use client';
 
-import React from 'react';
 import Image from 'next/image';
 import hero_1 from '@/assets/hero_1.png';
 import hero_2 from '@/assets/hero_2.avif';

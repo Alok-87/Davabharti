@@ -1,6 +1,5 @@
 'use client';
 
-import React from 'react';
 import BlogSectionCarousel from './BlogSectionCarousel';
 
 interface Blog {

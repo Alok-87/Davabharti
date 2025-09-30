@@ -1,4 +1,4 @@
-import React from 'react';
+
 import about from '@/assets/about.jpg';
 import Image from 'next/image';
 

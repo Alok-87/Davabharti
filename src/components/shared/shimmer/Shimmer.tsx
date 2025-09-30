@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 interface ShimmerProps {
   className?: string; // Additional classes for the wrapper

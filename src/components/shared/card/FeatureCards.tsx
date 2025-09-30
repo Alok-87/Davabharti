@@ -1,4 +1,4 @@
-import React from 'react';
+
 import images_1 from '@/assets/Cosmetic.png';
 import images_2 from '@/assets/Cosmetic2.png';
 import images_3 from '@/assets/winterscare.png';

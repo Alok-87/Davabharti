@@ -1,7 +1,6 @@
 // src/components/shared/FeatureMobileCarouselClient.tsx
 'use client';
 
-import React from 'react';
 import Image from 'next/image';
 import cosmetic from '@/assets/Cosmetic.png';
 import cosmetic_2 from '@/assets/Cosmetic2.png';

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Image from 'next/image';
 
 // Sample images (replace with your real ones)

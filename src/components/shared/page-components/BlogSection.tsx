@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Image from 'next/image';
 
 import blog_1 from '@/assets/blog_1.png';

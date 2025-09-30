@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { FaRegUser } from 'react-icons/fa';
 import { IoLocation, IoCartOutline } from 'react-icons/io5';
 import { MdOutlineMyLocation } from 'react-icons/md';

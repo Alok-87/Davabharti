@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { FaTruck, FaRupeeSign, FaGift, FaShieldAlt, FaUndo, FaMobileAlt } from 'react-icons/fa';
 
 const WhyChooseUs = () => {

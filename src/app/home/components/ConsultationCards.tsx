@@ -1,5 +1,5 @@
 // src/components/shared/ConsultationCards.tsx
-import React from 'react';
+
 import { Video, Home, Phone } from 'lucide-react';
 
 export default function ConsultationCards() {
