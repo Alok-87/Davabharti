@@ -1,5 +1,5 @@
-import Filter from "@/components/shared/filter/Filter";
-import MedicineCard from "@/components/shared/card/MedicineCard";
+import Filter from '@/components/shared/filter/Filter';
+import MedicineCard from '@/components/shared/card/MedicineCard';
 
 const products = [
   {
@@ -9,7 +9,8 @@ const products = [
     price: '₹50',
     rating: 5,
     reviewCount: 38,
-    imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/category-page-05-image-card-01.jpg',
+    imageSrc:
+      'https://tailwindcss.com/plus-assets/img/ecommerce-images/category-page-05-image-card-01.jpg',
     imageAlt: 'Paracetamol 500mg tablets',
     href: '#',
   },
@@ -20,7 +21,8 @@ const products = [
     price: '₹120',
     rating: 5,
     reviewCount: 18,
-    imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/category-page-05-image-card-02.jpg',
+    imageSrc:
+      'https://tailwindcss.com/plus-assets/img/ecommerce-images/category-page-05-image-card-02.jpg',
     imageAlt: 'Amoxicillin capsules',
     href: '#',
   },
@@ -31,7 +33,8 @@ const products = [
     price: '₹30',
     rating: 5,
     reviewCount: 14,
-    imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/category-page-05-image-card-03.jpg',
+    imageSrc:
+      'https://tailwindcss.com/plus-assets/img/ecommerce-images/category-page-05-image-card-03.jpg',
     imageAlt: 'Cetirizine tablets',
     href: '#',
   },
@@ -42,7 +45,8 @@ const products = [
     price: '₹80',
     rating: 4,
     reviewCount: 21,
-    imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/category-page-05-image-card-04.jpg',
+    imageSrc:
+      'https://tailwindcss.com/plus-assets/img/ecommerce-images/category-page-05-image-card-04.jpg',
     imageAlt: 'Ibuprofen tablets',
     href: '#',
   },
@@ -53,7 +57,8 @@ const products = [
     price: '₹150',
     rating: 4,
     reviewCount: 22,
-    imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/category-page-05-image-card-05.jpg',
+    imageSrc:
+      'https://tailwindcss.com/plus-assets/img/ecommerce-images/category-page-05-image-card-05.jpg',
     imageAlt: 'Azithromycin tablets',
     href: '#',
   },
@@ -64,7 +69,8 @@ const products = [
     price: '₹60',
     rating: 5,
     reviewCount: 64,
-    imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/category-page-05-image-card-06.jpg',
+    imageSrc:
+      'https://tailwindcss.com/plus-assets/img/ecommerce-images/category-page-05-image-card-06.jpg',
     imageAlt: 'Vitamin C tablets',
     href: '#',
   },
@@ -75,7 +81,8 @@ const products = [
     price: '₹90',
     rating: 4,
     reviewCount: 12,
-    imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/category-page-05-image-card-07.jpg',
+    imageSrc:
+      'https://tailwindcss.com/plus-assets/img/ecommerce-images/category-page-05-image-card-07.jpg',
     imageAlt: 'Metformin tablets',
     href: '#',
   },
@@ -86,7 +93,8 @@ const products = [
     price: '₹70',
     rating: 4,
     reviewCount: 41,
-    imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/category-page-05-image-card-08.jpg',
+    imageSrc:
+      'https://tailwindcss.com/plus-assets/img/ecommerce-images/category-page-05-image-card-08.jpg',
     imageAlt: 'Omeprazole capsules',
     href: '#',
   },
@@ -97,11 +105,12 @@ const products = [
     price: '₹110',
     rating: 5,
     reviewCount: 24,
-    imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/category-page-05-image-card-09.jpg',
+    imageSrc:
+      'https://tailwindcss.com/plus-assets/img/ecommerce-images/category-page-05-image-card-09.jpg',
     imageAlt: 'Calcium + Vitamin D3 tablets',
     href: '#',
   },
-]
+];
 
 const Medicines = () => {
   return (
@@ -122,9 +131,7 @@ const Medicines = () => {
         </main>
       </div>
     </div>
-
   );
 };
 
 export default Medicines;
-

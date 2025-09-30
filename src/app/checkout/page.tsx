@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 function CheckOut() {
-  return (
-    <main>CheckOut-Page</main>
-  )
+  return <main>CheckOut-Page</main>;
 }
 
-export default CheckOut
+export default CheckOut;

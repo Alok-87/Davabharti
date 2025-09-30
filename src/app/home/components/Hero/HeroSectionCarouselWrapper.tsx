@@ -1,7 +1,7 @@
-"use client";
-import dynamic from "next/dynamic";
+'use client';
+import dynamic from 'next/dynamic';
 
-const HeroSectionCarousel = dynamic(() => import("./HeroSectionCarousel"), {
+const HeroSectionCarousel = dynamic(() => import('./HeroSectionCarousel'), {
   ssr: false,
 });
 

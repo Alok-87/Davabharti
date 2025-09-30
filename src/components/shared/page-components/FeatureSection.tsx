@@ -1,38 +1,38 @@
-import { TbTruckDelivery, TbShoppingCart } from "react-icons/tb";
-import { ImCreditCard } from "react-icons/im";
-import { BiSupport } from "react-icons/bi";
-import { LuClipboardPenLine } from "react-icons/lu";
+import { TbTruckDelivery, TbShoppingCart } from 'react-icons/tb';
+import { ImCreditCard } from 'react-icons/im';
+import { BiSupport } from 'react-icons/bi';
+import { LuClipboardPenLine } from 'react-icons/lu';
 
 const features = [
   {
     id: 1,
     icon: TbTruckDelivery,
-    title: "Free Delivery",
-    description: "For all orders over $120",
+    title: 'Free Delivery',
+    description: 'For all orders over $120',
   },
   {
     id: 2,
     icon: ImCreditCard,
-    title: "Safe Payment",
-    description: "100% secure payment",
+    title: 'Safe Payment',
+    description: '100% secure payment',
   },
   {
     id: 3,
     icon: TbShoppingCart,
-    title: "Shop With Confidence",
-    description: "If goods have problems",
+    title: 'Shop With Confidence',
+    description: 'If goods have problems',
   },
   {
     id: 4,
     icon: BiSupport,
-    title: "24/7 Help Center",
-    description: "Dedicated 24/7 support",
+    title: '24/7 Help Center',
+    description: 'Dedicated 24/7 support',
   },
   {
     id: 5,
     icon: LuClipboardPenLine,
-    title: "Friendly Services",
-    description: "30 day satisfaction guarantee",
+    title: 'Friendly Services',
+    description: '30 day satisfaction guarantee',
   },
 ];
 
@@ -64,7 +64,8 @@ const FeatureSection = () => {
             Dava Bharti – India's Most Trusted Online Pharmacy for Quality Medicine Delivery
           </h2>
           <p className="text-primary text-sm sm:text-base md:text-lg lg:text-lg font-normal leading-relaxed mx-auto opacity-90">
-            Experience Trusted and Reliable Medicine Delivery with India's Leading Online Pharmacy – Order Now from Dava Bharti.
+            Experience Trusted and Reliable Medicine Delivery with India's Leading Online Pharmacy –
+            Order Now from Dava Bharti.
           </p>
         </div>
       </div>

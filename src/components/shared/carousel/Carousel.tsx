@@ -113,15 +113,15 @@
 //     </div>
 //   );
 // }
-"use client";
+'use client';
 
-import { useRef, useEffect, useState, ReactNode } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { useRef, useEffect, useState, ReactNode } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
-import "swiper/css";
-import "swiper/css/navigation";
+import 'swiper/css';
+import 'swiper/css/navigation';
 
 interface CarouselProps<T> {
   items: T[];
@@ -185,12 +185,14 @@ export default function Carousel<T>({
         {loading
           ? Array.from({ length: slidesPerViewDesktop }).map((_, index) => (
               <SwiperSlide key={index}>
-                {renderLoader ? renderLoader(index) : <div className="p-4 bg-gray-200 rounded-md">Loading...</div>}
+                {renderLoader ? (
+                  renderLoader(index)
+                ) : (
+                  <div className="p-4 bg-gray-200 rounded-md">Loading...</div>
+                )}
               </SwiperSlide>
             ))
-          : items.map((item, idx) => (
-              <SwiperSlide key={idx}>{renderItem(item, idx)}</SwiperSlide>
-            ))}
+          : items.map((item, idx) => <SwiperSlide key={idx}>{renderItem(item, idx)}</SwiperSlide>)}
       </Swiper>
 
       {/* Left arrow */}
@@ -198,7 +200,7 @@ export default function Carousel<T>({
         ref={prevRef}
         className={`absolute left-0 top-1/2 -translate-y-1/2 z-10
           bg-gray-700 text-white p-3 rounded-full shadow-md transition
-          ${isBeginning ? "opacity-0 pointer-events-none" : "opacity-100 pointer-events-auto"}`}
+          ${isBeginning ? 'opacity-0 pointer-events-none' : 'opacity-100 pointer-events-auto'}`}
       >
         <FaArrowLeft />
       </button>
@@ -208,7 +210,7 @@ export default function Carousel<T>({
         ref={nextRef}
         className={`absolute right-0 top-1/2 -translate-y-1/2 z-10
           bg-gray-700 text-white p-3 rounded-full shadow-md transition
-          ${isEnd ? "opacity-0 pointer-events-none" : "opacity-100 pointer-events-auto"}`}
+          ${isEnd ? 'opacity-0 pointer-events-none' : 'opacity-100 pointer-events-auto'}`}
       >
         <FaArrowRight />
       </button>

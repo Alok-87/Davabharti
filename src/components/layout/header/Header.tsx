@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import React, { useState } from 'react';
 import { FaRegUser } from 'react-icons/fa';
 import { IoLocation, IoCartOutline } from 'react-icons/io5';
@@ -24,47 +24,47 @@ function Header() {
   // Category data with dropdown items
   const categories = [
     {
-      name: "Health Resource Center",
-      items: ["All Diseases", "All Medicines", "Medicines by Therapeutic Class"]
+      name: 'Health Resource Center',
+      items: ['All Diseases', 'All Medicines', 'Medicines by Therapeutic Class'],
     },
     {
-      name: "Hair Care",
-      items: ["Shampoos", "Hair Oils", "Hair Serums", "Dandruff Treatments"]
+      name: 'Hair Care',
+      items: ['Shampoos', 'Hair Oils', 'Hair Serums', 'Dandruff Treatments'],
     },
     {
-      name: "Fitness & Health",
-      items: ["Protein Supplements", "Fitness Equipment", "Health Monitors"]
+      name: 'Fitness & Health',
+      items: ['Protein Supplements', 'Fitness Equipment', 'Health Monitors'],
     },
     {
-      name: "Sexual Wellness",
-      items: ["Contraceptives", "Supplements", "Personal Care"]
+      name: 'Sexual Wellness',
+      items: ['Contraceptives', 'Supplements', 'Personal Care'],
     },
     {
-      name: "Vitamins & Nutrition",
-      items: ["Multivitamins", "Vitamin C", "Vitamin D", "Mineral Supplements"]
+      name: 'Vitamins & Nutrition',
+      items: ['Multivitamins', 'Vitamin C', 'Vitamin D', 'Mineral Supplements'],
     },
     {
-      name: "Supports & Braces",
-      items: ["Knee Supports", "Back Braces", "Wrist Supports"]
+      name: 'Supports & Braces',
+      items: ['Knee Supports', 'Back Braces', 'Wrist Supports'],
     },
     {
-      name: "Immunity Boosters",
-      items: ["Ayurvedic Immunity", "Vitamin C Supplements", "Herbal Tonics"]
+      name: 'Immunity Boosters',
+      items: ['Ayurvedic Immunity', 'Vitamin C Supplements', 'Herbal Tonics'],
     },
     {
-      name: "Homeopathy",
-      items: ["Common Remedies", "Specialty Medicines", "Consultation"]
+      name: 'Homeopathy',
+      items: ['Common Remedies', 'Specialty Medicines', 'Consultation'],
     },
   ];
 
   const serviceMenuItems = [
-    "Medicine",
-    "Healthcare",
-    "Healthcare",
-    "Doctor Consult",
-    "Lab Test",
-    "Health Insights",
-    "Offers"
+    'Medicine',
+    'Healthcare',
+    'Healthcare',
+    'Doctor Consult',
+    'Lab Test',
+    'Health Insights',
+    'Offers',
   ];
 
   return (
@@ -91,8 +91,19 @@ function Header() {
             {isMenuOpen ? (
               <IoIosClose className="w-6 h-6" />
             ) : (
-              <svg className="w-6 h-6" fill="none" viewBox="0 0 17 14" xmlns="http://www.w3.org/2000/svg">
-                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                viewBox="0 0 17 14"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
               </svg>
             )}
           </button>
@@ -102,9 +113,9 @@ function Header() {
 
           {/* Login and Cart */}
           <div className="flex items-center gap-4">
-           <Link href="#" className="flex items-center gap-1 hover:text-blue-600">
+            <Link href="#" className="flex items-center gap-1 hover:text-blue-600">
               <FaRegUser className="text-xl text-gray-700" />
-            </Link> 
+            </Link>
             <a href="#" className="flex items-center gap-1 hover:text-blue-600">
               <IoCartOutline className="text-xl" />
             </a>
@@ -162,12 +173,17 @@ function Header() {
                       className="w-full py-2 px-3 flex justify-between items-center hover:bg-gray-50"
                     >
                       {category.name}
-                      <IoIosArrowDown className={`h-4 w-4 text-gray-400 transition-transform ${activeDropdown === index ? 'rotate-180' : ''}`} />
+                      <IoIosArrowDown
+                        className={`h-4 w-4 text-gray-400 transition-transform ${activeDropdown === index ? 'rotate-180' : ''}`}
+                      />
                     </button>
                     {activeDropdown === index && (
                       <ul className="ml-4 bg-gray-50 rounded-md mt-1">
                         {category.items.map((item, itemIndex) => (
-                          <li key={itemIndex} className="py-2 px-3 text-gray-600 border-b border-gray-100 last:border-b-0">
+                          <li
+                            key={itemIndex}
+                            className="py-2 px-3 text-gray-600 border-b border-gray-100 last:border-b-0"
+                          >
                             {item}
                           </li>
                         ))}
@@ -189,7 +205,10 @@ function Header() {
             <div className="items-center justify-center font-medium w-full md:flex md:w-auto md:order-1">
               <ul className="flex items-center gap-8 font-medium">
                 {serviceMenuItems.map((item, index) => (
-                  <li key={index} className="block py-2 px-3 cursor-pointer text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">
+                  <li
+                    key={index}
+                    className="block py-2 px-3 cursor-pointer text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
+                  >
                     {item}
                   </li>
                 ))}
@@ -268,8 +287,6 @@ function Header() {
             </div>
           </div>
         </div>
-
-
       </div>
     </header>
   );

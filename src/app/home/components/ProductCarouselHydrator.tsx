@@ -1,8 +1,7 @@
-"use client";
-import { useState, useEffect } from "react";
-import ProductCarouselClient from "./ProductCarouselClient";
-import { Product } from "./ProductCard";
-
+'use client';
+import { useState, useEffect } from 'react';
+import ProductCarouselClient from './ProductCarouselClient';
+import { Product } from './ProductCard';
 
 export default function ProductCarouselHydrator({ products }: { products: Product[] }) {
   const [hydrated, setHydrated] = useState(false);

@@ -1,7 +1,7 @@
-import { useRef, useEffect, useState } from "react";
-import Carousel from "@/components/shared/carousel/Carousel";
-import ShimmerProductCard from "@/components/shared/shimmer/ShimmerProductCard";
-import ProductCard, { Product } from "@/components/shared/card/ProductCard";
+import { useRef, useEffect, useState } from 'react';
+import Carousel from '@/components/shared/carousel/Carousel';
+import ShimmerProductCard from '@/components/shared/shimmer/ShimmerProductCard';
+import ProductCard, { Product } from '@/components/shared/card/ProductCard';
 
 interface ProductCarouselClientProps {
   products: Product[];
@@ -24,8 +24,8 @@ export default function ProductCarouselClient({ products }: ProductCarouselClien
 
   // Update heights on window resize
   useEffect(() => {
-    window.addEventListener("resize", updateHeights);
-    return () => window.removeEventListener("resize", updateHeights);
+    window.addEventListener('resize', updateHeights);
+    return () => window.removeEventListener('resize', updateHeights);
   }, []);
 
   return (
@@ -38,14 +38,13 @@ export default function ProductCarouselClient({ products }: ProductCarouselClien
       spaceBetween={20}
       renderItem={(product, idx) => (
         <div
-          ref={(el) => { cardRefs.current[idx] = el; }}
+          ref={(el) => {
+            cardRefs.current[idx] = el;
+          }}
           // Only set height after measurement
           style={maxHeight ? { height: maxHeight } : undefined}
         >
-          <ProductCard 
-            product={product} 
-            onClick={(p) => console.log("Clicked product:", p)} 
-          />
+          <ProductCard product={product} onClick={(p) => console.log('Clicked product:', p)} />
         </div>
       )}
       renderLoader={() => <ShimmerProductCard />}

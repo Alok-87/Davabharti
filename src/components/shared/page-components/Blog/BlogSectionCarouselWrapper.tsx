@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import React from "react";
-import BlogSectionCarousel from "./BlogSectionCarousel";
+import React from 'react';
+import BlogSectionCarousel from './BlogSectionCarousel';
 
 interface Blog {
   id: number;

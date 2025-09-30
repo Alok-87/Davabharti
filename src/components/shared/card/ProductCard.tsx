@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export interface Product {
   id: string;
@@ -15,7 +15,7 @@ interface ProductCardProps {
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({ product, onClick }) => {
-    console.log(product)
+  console.log(product);
   const discountedPrice = product.discount
     ? (product.price - (product.price * product.discount) / 100).toFixed(2)
     : null;
@@ -63,10 +63,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onClick }) => {
               </span>
             </>
           ) : (
-            <span
-              className="text-indigo-600 font-bold"
-              aria-label={`Price ₹${product.price}`}
-            >
+            <span className="text-indigo-600 font-bold" aria-label={`Price ₹${product.price}`}>
               ₹{product.price}
             </span>
           )}

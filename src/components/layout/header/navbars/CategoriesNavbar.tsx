@@ -5,7 +5,6 @@ const CategoriesNavbar = () => {
     <div className="bg-white border-b shadow-sm">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between space-x-6">
-
           {/* Dropdown Item */}
           <div className="relative group py-4">
             <div className="flex items-center text-gray-800 font-medium text-sm gap-1">
@@ -71,7 +70,7 @@ const CategoriesNavbar = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default CategoriesNavbar
+export default CategoriesNavbar;

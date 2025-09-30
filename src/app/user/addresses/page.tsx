@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 function UserAddresses() {
-  return (
-    <div>UserAddresses-Page</div>
-  )
+  return <div>UserAddresses-Page</div>;
 }
 
-export default UserAddresses
+export default UserAddresses;

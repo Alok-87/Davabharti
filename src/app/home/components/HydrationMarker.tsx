@@ -1,19 +1,21 @@
 // src/components/shared/HydrationMarker.tsx
-"use client";
+'use client';
 
-import { useEffect } from "react";
+import { useEffect } from 'react';
 
 export default function HydrationMarker() {
   useEffect(() => {
     try {
-      document.body.classList.add("hydrated");
+      document.body.classList.add('hydrated');
       // useful for debugging — remove in production
       // console.log("HydrationMarker: added body.hydrated");
     } catch (e) {
       // ignore
     }
     return () => {
-      try { document.body.classList.remove("hydrated"); } catch {}
+      try {
+        document.body.classList.remove('hydrated');
+      } catch {}
     };
   }, []);
 

@@ -1,10 +1,10 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
   --bg-color: #1f539f;
-  --text-color:#1f539f;
+  --text-color: #1f539f;
 }
 
 @theme inline {
@@ -55,11 +55,9 @@ body {
 .btn-icon {
   @apply mr-2; /* spacing between icon and text */
 }
-.text-primary
-{
+.text-primary {
   color: var(--text-color);
 }
-
 
 /* Ensure default SSR grid shows normally */
 .ssr-grid {
@@ -77,14 +75,9 @@ body.hydrated .ssr-grid {
 /* Optional: prepare a CSS class so carousel can fade in when hydrated */
 .hydrated-show {
   opacity: 0;
-  transition: opacity .28s ease;
+  transition: opacity 0.28s ease;
   height: auto;
 }
 body.hydrated .hydrated-show {
   opacity: 1;
 }
-
-
-
-
-

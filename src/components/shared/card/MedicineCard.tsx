@@ -1,4 +1,4 @@
-import { AiOutlineShoppingCart } from "react-icons/ai";
+import { AiOutlineShoppingCart } from 'react-icons/ai';
 
 interface MedicineCardProps {
   product: {
@@ -41,11 +41,13 @@ const MedicineCard: React.FC<MedicineCardProps> = ({ product }) => {
 
         <div className="mt-2 sm:mt-3 flex items-center justify-between">
           {/* Price */}
-          <p className="text-sm sm:text-base md:text-lg font-medium text-gray-900">{product.price}</p>
+          <p className="text-sm sm:text-base md:text-lg font-medium text-gray-900">
+            {product.price}
+          </p>
 
           {/* Rating */}
           <div className="flex items-center">
-             <svg
+            <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
@@ -57,7 +59,9 @@ const MedicineCard: React.FC<MedicineCardProps> = ({ product }) => {
                 clipRule="evenodd"
               />
             </svg>
-            <p className="text-sm sm:text-base md:text-lg font-medium text-gray-900">{product.rating}</p>
+            <p className="text-sm sm:text-base md:text-lg font-medium text-gray-900">
+              {product.rating}
+            </p>
           </div>
         </div>
       </div>

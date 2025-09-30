@@ -1,17 +1,17 @@
-"use client";
-import React from "react";
-import banner_1 from "@/assets/banner_1.png";
-import banner_2 from "@/assets/banner_2.png";
-import banner_3 from "@/assets/banner_3.png";
-import banner_4 from "@/assets/banner_4.png";
-import banner_5 from "@/assets/banner_5.png";
-import dynamic from "next/dynamic";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Image from "next/image";
+'use client';
+import React from 'react';
+import banner_1 from '@/assets/banner_1.png';
+import banner_2 from '@/assets/banner_2.png';
+import banner_3 from '@/assets/banner_3.png';
+import banner_4 from '@/assets/banner_4.png';
+import banner_5 from '@/assets/banner_5.png';
+import dynamic from 'next/dynamic';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import Image from 'next/image';
 
 // Dynamically import react-slick
-const Slider = dynamic(() => import("react-slick"), { ssr: false });
+const Slider = dynamic(() => import('react-slick'), { ssr: false });
 
 const Images = [banner_1, banner_2, banner_3, banner_4, banner_5];
 
@@ -25,7 +25,7 @@ const HeroSectionCarousel = () => {
     speed: 1000,
     autoplaySpeed: 3000,
     fade: true,
-    cssEase: "linear",
+    cssEase: 'linear',
   };
 
   return (

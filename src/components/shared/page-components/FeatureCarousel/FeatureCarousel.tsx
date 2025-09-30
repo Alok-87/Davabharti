@@ -1,16 +1,16 @@
-"use client";
+'use client';
 
 import images_1 from '@/assets/Cosmetic.png';
 import images_2 from '@/assets/Cosmetic2.png';
 import images_3 from '@/assets/winterscare.png';
-import dynamic from "next/dynamic";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Image from "next/image";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import dynamic from 'next/dynamic';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import Image from 'next/image';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 // Dynamically import react-slick
-const Slider = dynamic(() => import("react-slick"), { ssr: false });
+const Slider = dynamic(() => import('react-slick'), { ssr: false });
 
 const Images = [images_1, images_2, images_3];
 
@@ -42,7 +42,7 @@ const FeatureCarousel = () => {
     autoplay: false, // autoplay disabled
     speed: 500,
     fade: true,
-    cssEase: "linear",
+    cssEase: 'linear',
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     responsive: [

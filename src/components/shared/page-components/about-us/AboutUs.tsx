@@ -1,6 +1,6 @@
-import React from "react";
-import about from "@/assets/about.jpg";
-import Image from "next/image";
+import React from 'react';
+import about from '@/assets/about.jpg';
+import Image from 'next/image';
 
 const AboutUs = () => {
   return (
@@ -12,9 +12,8 @@ const AboutUs = () => {
             About <span className="text-blue-600">Us</span>
           </h2>
           <p className="mt-3 text-gray-600 max-w-2xl mx-auto">
-            Welcome to{" "}
-            <span className="font-semibold text-blue-600">Dava Bharti</span>,  
-            your trusted online pharmacy and healthcare partner in India.
+            Welcome to <span className="font-semibold text-blue-600">Dava Bharti</span>, your
+            trusted online pharmacy and healthcare partner in India.
           </p>
         </div>
 
@@ -30,37 +29,30 @@ const AboutUs = () => {
 
           {/* Content Section */}
           <div className="lg:w-1/2 flex flex-col justify-center space-y-6 h-full">
-            <h3 className="text-3xl font-bold text-gray-900">
-              About Dava Bharti
-            </h3>
+            <h3 className="text-3xl font-bold text-gray-900">About Dava Bharti</h3>
             <p className="text-gray-700 leading-relaxed">
-              <span className="font-semibold">Dava Bharti</span> started as a
-              small medical store in 2007 and has grown into one of India’s most
-              trusted e-commerce healthcare platforms. Our mission is simple:{" "}
-              <strong>
-                make healthcare reliable, affordable, and accessible for
-                everyone.
-              </strong>
+              <span className="font-semibold">Dava Bharti</span> started as a small medical store in
+              2007 and has grown into one of India’s most trusted e-commerce healthcare platforms.
+              Our mission is simple:{' '}
+              <strong>make healthcare reliable, affordable, and accessible for everyone.</strong>
             </p>
 
             <p className="text-gray-700 leading-relaxed">
-              We provide a wide range of <span className="font-medium">authentic medicines</span>, 
+              We provide a wide range of <span className="font-medium">authentic medicines</span>,
               healthcare essentials, and wellness products delivered straight to your
               doorstep—quick, safe, and hassle-free.
             </p>
 
             <p className="text-gray-700 leading-relaxed">
-              With{" "}
-              <span className="font-medium">experienced doctors</span>,
-              <span className="font-medium"> online consultations</span>, and{" "}
-              <span className="font-medium">diagnostic lab tests</span>, Dava
-              Bharti ensures that your complete healthcare needs are covered in
-              one place.
+              With <span className="font-medium">experienced doctors</span>,
+              <span className="font-medium"> online consultations</span>, and{' '}
+              <span className="font-medium">diagnostic lab tests</span>, Dava Bharti ensures that
+              your complete healthcare needs are covered in one place.
             </p>
 
             <p className="text-gray-700 leading-relaxed">
-              We’re not just an online pharmacy—we’re your healthcare partner,
-              here to support your well-being every step of the way.
+              We’re not just an online pharmacy—we’re your healthcare partner, here to support your
+              well-being every step of the way.
             </p>
           </div>
         </div>

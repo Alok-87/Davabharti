@@ -1,26 +1,26 @@
-import { Video, Home, Phone } from "lucide-react";
+import { Video, Home, Phone } from 'lucide-react';
 
 const consultations = [
   {
     id: 1,
     icon: Video,
-    title: "Video Consultation",
+    title: 'Video Consultation',
     description:
-      "No need to step outside for medical consultation. Visit this tab and meet the doctor online instead.",
+      'No need to step outside for medical consultation. Visit this tab and meet the doctor online instead.',
   },
   {
     id: 2,
     icon: Home,
-    title: "Clinic Visit",
+    title: 'Clinic Visit',
     description:
-      "Book your prior appointment online. Click this tab to reserve your slot for the clinic appointment.",
+      'Book your prior appointment online. Click this tab to reserve your slot for the clinic appointment.',
   },
   {
     id: 3,
     icon: Phone,
-    title: "Phone Consultation",
+    title: 'Phone Consultation',
     description:
-      "Connect with healthcare professionals through phone calls. Schedule your consultation at your convenient time.",
+      'Connect with healthcare professionals through phone calls. Schedule your consultation at your convenient time.',
   },
 ];
 

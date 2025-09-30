@@ -1,7 +1,7 @@
-import React, { ButtonHTMLAttributes, ReactNode } from "react";
-import clsx from "clsx";
+import React, { ButtonHTMLAttributes, ReactNode } from 'react';
+import clsx from 'clsx';
 
-type ButtonVariant = "primary" | "secondary" | "danger";
+type ButtonVariant = 'primary' | 'secondary' | 'danger';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: ButtonVariant;
@@ -11,7 +11,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const Button: React.FC<ButtonProps> = ({
-  variant = "primary",
+  variant = 'primary',
   children,
   icon,
   fullWidth = false,
@@ -19,15 +19,15 @@ const Button: React.FC<ButtonProps> = ({
   disabled,
   ...props
 }) => {
-  const baseClasses = "btn";
+  const baseClasses = 'btn';
   const variantClasses = clsx({
-    "btn-primary": variant === "primary",
-    "btn-secondary": variant === "secondary",
-    "btn-danger": variant === "danger",
-    "btn-disabled": disabled,
+    'btn-primary': variant === 'primary',
+    'btn-secondary': variant === 'secondary',
+    'btn-danger': variant === 'danger',
+    'btn-disabled': disabled,
   });
 
-  const widthClass = fullWidth ? "w-full" : "w-auto";
+  const widthClass = fullWidth ? 'w-full' : 'w-auto';
 
   return (
     <button
